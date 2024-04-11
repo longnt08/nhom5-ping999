@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Merchant Board</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="/css/CSS_Produce.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="/js/JS_ALL_Produce.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/footer-new.css">
+        <!-- icon trang -->
+    </head>
+
+      
+    <body style="max-width: 1900px; max-height: 4000px;">
+        <header>
+            <div>
+                <img src = "/img/logo.jpg" id = "logo">
+            </div>
+            <div id = "all_search_box">
+                <form action = "" id = "search_box">
+                    <input type="text" id = "search_text"  placeholder="Search" required>
+                    <button id = "search_btn"><a><i class="fa-solid fa-magnifying-glass"></i></a> </button>
+                </form>
+            </div>
+
+            <ul id = "TITLE">
+                <!-- <li><a> Search <i class="fa-solid fa-magnifying-glass""></i></a></li> -->
+                <li><a href="/html/Home.html"><i>HOME</i></a></li>
+                <li><a href="/html/about.html"><i>ABOUT</i></a></li>
+                <li><a href="/html/Equipment.html"><i>EQUIPMENT</i></a></li>
+                <li><a href="/html/Supplies.html"><i>SUPPLIES</i></a></li>
+                <li><a href="/html/Accessories.html"><i>ACEESSORIES</i></a></li>
+                <li><a href="/html/Parts.html"><i>PARTS</i></a></li>
+                <li id = "orderNow"><a href="/html/order-methods.html">ORDER NOW</i></a></li>
+            </ul>
+            <div id = "toggle-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </header>
+  
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="/html/Accessories.html">Accessories</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+                    <li><a href="">Merchant Board</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class = "container">
+            <div id = "Main_Content">
+                <div id = "IMG_MainProduce" style="object-fit: contain;">
+                    <img id = "MainIMG" src = "/img/Merchant_Board1.jpg" style="height: auto; width: 100%;"></img>
+                </div>
+
+
+                <div id = "Content_MainProduce">
+                    <p id = "name_Produce">Merchant Board</p>
+                    <ul>
+                        <li><a>PNWX</a></li>
+                        <li><a>Stock #: 1104-C3a</a></li>
+                    </ul>
+
+                    <hr style="width: 100%; margin-top: 3%; background-color: black;">
+                    <p id = "other_option">Other options</p>
+
+                    <div id = "IMG_more">
+                        <img src = "/img/Merchant_Board1.jpg" class = "small_IMG"></img>
+                        <img src = "/img/Merchant_Board2.png" class = "small_IMG"></img>
+                        <img src = "/img/Merchant_Board3.png" class = "small_IMG" ></img>
+                        <img src = "/img/Merchant_Board3.png" class = "small_IMG"></img>
+                        <img src = "/img/Merchant_Board3.png" class = "small_IMG"></img>
+                    </div>
+
+                    <hr style="width: 100%; background-color: black;">
+                    <p id = "value_product"><b>$2000</b></p>
+                    <p id = "contact_us"><input type = "submit" value= "contact us" ></p>
+                </div>
+
+            </div>
+
+            <div id = "information">
+                <button onclick="toggleContent('content1')" class="title_info"><b>Description</b></button>
+                <button onclick="toggleContent('content2')" class="title_info"><b>Size</b></button>
+                <button onclick="toggleContent('content3')" class="title_info"><b>More information</b></button>
+
+                <div id="content1" class="content active detail_infor_product">
+                    <b>An ultra sturdy solid-box-design X-Ray Merchant board intended for use with modern expensive DR digital panels and or plates.</b> Provides for a fixed 45 degree angle from the end of typical radiographic imaging tables. Includes leg straps to hold both legs closely together for dual comparison of both legs in a single shot. Available in two models; the 1104-C3, which does not come with side arms (for those institutions which prefer using an external and separate panel holder for more flexibility on detector placement during merchant exams) and the 1104-C3a model which DOES come with dual removable side arms. Arms are constructed of solid aluminum C-Channels with adjustable depth stops that securely hold the panel just above the patient’s shins. Both arms on the 1104-C3a have dual positions which allow the plate to be positioned 8" or 12" inches down the 45° slope from the tables surface.
+                </div>
+                <div id="content2" class="content detail_infor_product">Box style merchant board with arms to accommodate.<br>DR Panels up to 1-1/4 thick.</div>
+                <div id="content3" class="content detail_infor_product">SPECIFY your panel dimensions at time of order.</div>
+
+            </div>
+
+            <p class = "OtherProduct"><b>Related Products</b></p> 
+            <div class="related_products">
+                <div class="box">
+                    <a href = "Patient_Restraint.html">
+                        <img src="/img/Restraint1.png" class = "detail_related">
+                        <div class = "infor_detail_related">
+                            <p class = "relate_name_product">Patient Restraint and Traction System</p>
+                            <p class = "relate_value_product">50$</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href = "Patient_Standard_X_Ray_Table_Pad.html">
+                        <img src="/img/Table_Pad1.jpg" class = "detail_related">
+                        <div class = "infor_detail_related">
+                            <p class = "relate_name_product">Standard X-Ray Table Pad</p>
+                            <p class = "relate_value_product">500$</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href = "Patient_Tranfer_Broad.html">
+                        <img src="/img/Patient_Transfer_Broad1.jpg" class = "detail_related">
+                        <div class = "infor_detail_related">
+                            <p class = "relate_name_product">Transfer Broad</p>
+                            <p class = "relate_value_product">10$</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href = "Patient_WheelChair.html">
+                        <img src="/img/WheelChair1.jpg" class = "detail_related">
+                        <div class = "infor_detail_related">
+                            <p class = "relate_name_product">MRI WheelChair</p>
+                            <p class = "relate_value_product">100$</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>     
+    </body>
+
+    <footer class="footer">
+        <div>
+          <div class="row">
+            <div class="footer-col">
+              <ul>
+                <li>
+                  <img
+                    src="/img/footer_Logo.png"
+                    alt="logo"
+                    style="width: 250px; height: auto"
+                  />
+                </li>
+                <div class="social-links">
+                  <li>
+                    <a href="https://www.facebook.com/profile.php?id=100076811227628"
+                      ><i class="fab fa-facebook"></i
+                    ></a>
+                    <a href="https://twitter.com/PacificXray2"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="footer-col" id="footer_Order">
+              <h4><b>Order</b></h4>
+              <ul>
+                <li><a href="/html/about.html">About Us</a></li>
+                <li><a href="/html/order-methods.html">Order Methods</a></li>
+              </ul>
+            </div>
+            <div class="footer-col" id="footer_Product">
+              <h4><b>Product</b></h4>
+              <ul>
+                <li><a href="/html/Equipment.html">Equipment</a></li>
+                <li><a href="/html/Supplies.html">Supplies</a></li>
+                <li><a href="/html/Accessories.html">Accessories</a></li>
+                <li><a href="/html/Parts.html">Parts</a></li>
+              </ul>
+            </div>
+            <div class="footer-col" id="footer_contact_information">
+              <h4><b>Contact Information</b></h4>
+              <ul>
+                <li>
+                  <p>Phone: 1-503-667-3000</p>
+                  <p>(8am-5pm Monday-Friday)</p>
+                  <p>Toll-Free (US): 800-827-XRAY (800-827-9729)</p>
+                </li>
+                <li>Address: P.O. Box 625, Gresham, OR 97030, U.S.A.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p
+          style="
+            color: #bbb;
+            font-size: 12px;
+            text-align: right;
+            padding-right: 220px;
+          "
+        >
+          ©1997-2024 Pacific Northwest X-Ray Inc. - Sales & Marketing Division - All
+          Rights Reserved
+        </p>
+      </footer>
+</html>

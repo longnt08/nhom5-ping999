@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  /* background-color: pink; */
+}
+
+/* Banner */
+.hero{
+  overflow: hidden;
+  margin-top: 110px;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/equipment_banner.jpg");
+
+  height: 495px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero div{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 80px;
+}
+
+/* Products */
+section {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  padding: 100px;
+  padding-bottom: 50px;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+}
+
+section img{
+  height: 70%;
+  width: auto;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: arial; 
+  transition: 0.3s;
+  height: 300px;
+  width: 250px;
+}
+
+.card a{
+  text-decoration: none;
+  
+}
+
+.card h1{
+  margin-bottom: 5px;
+  color: black;
+}
+
+.product-info{
+  position: relative;
+  top: 5%;
+  bottom: 8%;
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+  cursor: pointer;
+
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+/* Page number */
+.pagination{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.page-number{
+  display: flex;
+  justify-self: center;
+}
+
+.page-number a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+
+.page-number a.active {
+  background-color: #47b5db;
+  color: white;
+}
+
+.page-number a:hover:not(.active) {background-color: #ddd;}
