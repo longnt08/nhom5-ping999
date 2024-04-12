@@ -1,58 +1,45 @@
 @media only screen and (min-width: 1024px) {
   .container {
-    padding-top: 0em;
     width: 100%;
     height: 15em;
     position: relative;
-    margin-bottom: 5%;
   }
-  #div_chua_anh_header {
+  .slidesShow {
     position: absolute;
-    transform: translate(0, 0);
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     background-color: white;
-    z-index: 1;
     animation: zoom-out 1s ease forwards;
+    overflow: hidden;
   }
-  #anh_header {
+  .slide {
+    /* position: relative; */
     width: 100%;
     height: 100%;
     transform: scaleX(-1);
     margin-bottom: 20px;
+    /* opacity: 0;
+    transition: opacity 0.5s ease; */
 }
+/* .slide.active {
+  opacity: 1;
+} */
+
   #div_chua_chu_header {
     position: relative;
     width: 40%;
     height: 80%;
     background-color: rgb(58, 51, 51);
-    z-index: 2;
+    z-index: 4;
     animation: zoom-in 1.3s ease forwards;
     opacity: 0.5;
     left: 53%;
-    top: 13%;
+    top: 11%;
     border-radius: 10px;
     font-size: 0.85em;
     text-align: center;
     color: white;
     padding: 2% 2% 0% 2%;
-  }
-  @keyframes zoom-in {
-    from {
-      transform: translate(0, 0) scale(0.8);
-    }
-    to {
-      transform: translate(0, 0) scale(1);
-    }
-  }
-  
-  @keyframes zoom-out {
-    from {
-      transform: translate(0, 0) scale(0.8);
-    }
-    to {
-      transform: translate(0, 0) scale(1);
-    }
   }
 #section2 {
     display: grid;
@@ -210,52 +197,35 @@
       position: relative;
       margin-bottom: 0%;
     }
-    #div_chua_anh_header {
+    .slidesShow {
       position: absolute;
       transform: translate(0, 0);
       width: 100%;
-      height: 80%;
+      height: 90%;
       background-color: white;
       z-index: 1;
       animation: zoom-out 1s ease forwards;
     }
-    #anh_header {
+    .slide {
       width: 100%;
       height: 100%;
       transform: scaleX(-1);
   }
     #div_chua_chu_header {
       position: relative;
-      width: 40%;
-      height: 70%;
+      width: 50%;
+      height: 80%;
       background-color: rgb(58, 51, 51);
       z-index: 2;
       animation: zoom-in 1.3s ease forwards;
       opacity: 0.5;
       left: 53%;
-      top: 6%;
+      top: 5%;
       border-radius: 10px;
       font-size: 0.75em;
       text-align: center;
       color: white;
-      padding: 1.5% 2% 0% 2%;
-    }
-    @keyframes zoom-in {
-      from {
-        transform: translate(0, 0) scale(0.8);
-      }
-      to {
-        transform: translate(0, 0) scale(1);
-      }
-    }
-    
-    @keyframes zoom-out {
-      from {
-        transform: translate(0, 0) scale(0.8);
-      }
-      to {
-        transform: translate(0, 0) scale(1);
-      }
+      padding: 2.5% 2% 0% 2%;
     }
   #section2 {
       display: grid;
@@ -390,146 +360,27 @@
 
 /* kich thuoc 3 */
 @media screen and (min-width: 481px) and (max-width: 767px) {
-  #header {
-      display: grid;
-      grid-template-rows: 70% 30%;
-      background-color: white;
-      color: #fff;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      height: 5.2em;
-    }
-    #div_logo_searchBox {
-      display: grid;
-      grid-template-columns: 50% 50%;
-    }
-    #div_logo {
-      padding: 1% 0% 0% 2%;
-      width: 33%;
-    }
-    #logo {
-      width: 6em;
-    }
-    #searchBox {
-      float: right;
-      padding: 8% 1% 0% 20%;
-      width: 90%;
-      animation: zoom-out 1s ease-in;
-    }
-    #searchInput {
-      width: 50%;
-      padding: 2% 2%;
-      border: 1px solid;
-      border-radius: 10px;
-      transition: all 0.4s ease-in-out;
-    }
-    #searchInput:focus {
-      width: 60%;
-    }
-    #searchBtn {
-      width: 20%;
-      padding: 2% 2%;
-      background-color: blue;
-      color: #fff;
-      border: none;
-      border-radius: 10px;
-    }
-    #all_menu {
-      padding-top: 1.5em;
-      display: grid;
-      grid-template-columns: 82% 18%;
-      height: 2.1em;
-    }
-    .menu-container {
-      background-color: #108810;
-      width: 100%;
-      overflow-x: auto;
-    }
-    
-    .menu {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      white-space: nowrap;
-    }
-    
-    .menu li {
-      display: inline-block;
-    }
-    
-    .menu li a {
-      display: block;
-      padding: 2% 1em;
-      text-decoration: none;
-      font-size: 1.1em;
-      color: white;
-      transition: background-color 0.3s ease;
-    }
-    .order_now {
-      background-color: #108810;
-      width: 100%;
-      overflow: hidden;
-    }
-    .menu-orderNow {
-      list-style-type: none;
-      padding: 1% 2%;
-      margin: 1% 0;
-      white-space: nowrap;
-    }
-    .menu-orderNow li {
-      display: inline-block;
-    }
-    .menu-orderNow li a {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      text-decoration: none;
-      font-size: 1.1em;
-      color: blue;
-    }
     .container {
-      padding-top: 6.8em;
       width: 100%;
       height: 10em;
       position: relative;
-      margin-bottom: 5%;
     }
-    #div_chua_anh_header {
-      position: absolute;
+    .slidesShow {
+      position: relative;
       transform: translate(0, 0);
       width: 100%;
-      height: 60%;
+      height: 90%;
       background-color: white;
       z-index: 1;
       animation: zoom-out 1s ease forwards;
     }
-    #anh_header {
+    .slide {
       width: 100%;
       height: 100%;
       transform: scaleX(-1);
   }
     #div_chua_chu_header {
       display: none;
-    }
-    @keyframes zoom-in {
-      from {
-        transform: translate(0, 0) scale(0.8);
-      }
-      to {
-        transform: translate(0, 0) scale(1);
-      }
-    }
-    
-    @keyframes zoom-out {
-      from {
-        transform: translate(0, 0) scale(0.8);
-      }
-      to {
-        transform: translate(0, 0) scale(1);
-      }
     }
   #section2 {
       display: grid;
@@ -543,7 +394,7 @@
   .tieu_de_lon {
       text-align: center;
       text-decoration: none;
-      font-size: 25px;
+      font-size: 20px;
       font-family: ABeeZee;
       font-weight: lighter;
       font-style: italic;
@@ -552,7 +403,7 @@
   .lorem {
       padding: 0;
       text-align: center;
-      font-size: 18px;
+      font-size: 15px;
       color: rgb(38, 224, 21);
   }
   #div2_anh {
@@ -612,7 +463,7 @@
   }
   .anhRightBottom {
       display: grid;
-      grid-template-rows: 13em 3em;
+      grid-template-rows: 13em 4em;
       padding-right: 0.5%;
       padding-bottom: 0.5%;
       animation: zoom-out 1s ease forwards;
@@ -623,28 +474,28 @@
   }
   .anhLeftBottom {
       display: grid;
-      grid-template-rows: 13em 3em;
+      grid-template-rows: 13em 4em;
       padding-left: 0.5%;
       padding-bottom: 0.5%;
       animation: zoom-out 1.1s ease forwards;
   }
   .anhRightTop {
       display: grid;
-      grid-template-rows: 13em 3em;
+      grid-template-rows: 13em 4em;
       padding-right: 0.5%;
       padding-top: 0.5%;
       animation: zoom-out 1.2s ease forwards;
   }
   .anhLeftTop {
       display: grid;
-      grid-template-rows: 13em 3em;
+      grid-template-rows: 13em 4em;
       padding-left: 0.5%;
       padding-top: 0.5%;
       animation: zoom-out 1.3s ease forwards;
   }
   #div_chua_view_all {
       text-align: center;
-      padding-top: 64px;
+      padding-top: 75px;
   }
   #viewAll {
       background: black;
@@ -672,143 +523,27 @@
 
 /* kich thuoc 4 */
 @media only screen and (max-width: 480px) {
-  #header {
-      display: grid;
-      grid-template-rows: 70% 30%;
-      background-color: white;
-      color: #fff;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      height: 5.2em;
-    }
-    #div_logo_searchBox {
-      display: grid;
-      grid-template-columns: 30% 70%;
-    }
-    #div_logo {
-      padding: 2% 0% 0% 2%;
-      width: 33%;
-    }
-    #logo {
-      width: 6em;
-    }
-    #searchBox {
-      float: right;
-      padding: 12% 1% 0% 20%;
-      width: 90%;
-      animation: zoom-out 1s ease-in;
-    }
-    #searchInput {
-      width: 40%;
-      padding: 2% 2%;
-      border: 1px solid;
-      border-radius: 10px;
-      transition: all 0.4s ease-in;
-    }
-    #searchInput:focus {
-      width: 55%;
-    }
-    #searchBtn {
-      width: 20%;
-      padding: 2% 2%;
-      background-color: rgb(9, 173, 58);
-      color: #fff;
-      border: none;
-      border-radius: 10px;
-    }
-    #all_menu {
-      padding-top: 1.5em;
-      display: grid;
-      grid-template-columns: 70% 30%;
-      height: 1.8em;
-    }
-    .menu-container {
-      background-color: #108810;
-      width: 100%;
-      overflow-x: auto;
-    }
-    .menu {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      white-space: nowrap;
-    }
-    .menu li {
-      display: inline-block;
-    }
-    .menu li a {
-      display: block;
-      padding: 2% 1em;
-      text-decoration: none;
-      font-size: 1em;
-      color: white;
-      transition: background-color 0.3s ease;
-    }
-    .order_now {
-      background-color: #108810;
-      width: 100%;
-      overflow: hidden;
-    }
-    .menu-orderNow {
-      list-style-type: none;
-      padding: 1% 2%;
-      margin: 1% 0;
-      white-space: nowrap;
-    }
-    .menu-orderNow li {
-      display: inline-block;
-    }
-    .menu-orderNow li a {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      text-decoration: none;
-      font-size: 1em;
-      color: blue;
-    }
     .container {
-      padding-top: 6.8em;
       width: 100%;
       height: 8em;
       position: relative;
-      margin-bottom: 5%;
     }
-    #div_chua_anh_header {
+    .slidesShow {
       position: absolute;
       transform: translate(0, 0);
       width: 100%;
-      height: 60%;
+      height: 90%;
       background-color: white;
       z-index: 1;
       animation: zoom-out 1s ease forwards;
     }
-    #anh_header {
+    .slide {
       width: 100%;
       height: 100%;
       transform: scaleX(-1);
   }
     #div_chua_chu_header {
       display: none;
-    }
-    @keyframes zoom-in {
-      from {
-        transform: translate(0, 0) scale(0.8);
-      }
-      to {
-        transform: translate(0, 0) scale(1);
-      }
-    }
-    
-    @keyframes zoom-out {
-      from {
-        transform: translate(0, 0) scale(0.8);
-      }
-      to {
-        transform: translate(0, 0) scale(1);
-      }
     }
 #section2 {
   display: grid;
@@ -863,12 +598,11 @@
 .div_chua_link_sp_noi_bat {
   background: black;
   text-align: center;
-  font-size: 30px;
-  padding-top: 10px;
+  font-size: 25px;
+  padding-top: 6px;
   color: white;
   font-style: italic;
   text-decoration: none;
-  border-radius: 0px 0px 10px 10px;
 }
 .link_sp_noi_bat {
   color: white;
@@ -892,7 +626,6 @@
 .picture {
   width: 100%;
   height: 100%;
-  border-radius: 10px 10px 0px 0px;
 }
 .anhLeftBottom {
   display: grid;
@@ -903,23 +636,23 @@
 .anhRightTop {
   display: grid;
   grid-template-rows: 200px 60px;
-  padding-bottom: 1%;
+  padding: 1% 0% 1% 0%;
 }
 
 .anhLeftTop {
   display: grid;
   grid-template-rows: 200px 60px;
-  padding-bottom: 1%;
+  padding: 1% 0% 1% 0%;
 }
 #div_chua_view_all {
   text-align: center;
-  padding-top: 4%;
+  padding-top: 8%;
 }
 #viewAll {
   background: black;
   font-size: 18px;
   font-style: italic;
-  padding: 3% 3% 3% 3%;
+  padding: 1% 10%;
   margin: 15px;
   border: 1px black;
 }
@@ -936,12 +669,28 @@
   color: black;
   font-style: italic;
   text-decoration: none;
-  border-radius: 0px 0px 10px 10px;
 }
 }
 
 /* thuoc tinh chung */
 
+@keyframes zoom-in {
+  from {
+    transform: translate(0, 0) scale(0.8);
+  }
+  to {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes zoom-out {
+  from {
+    transform: translate(0, 0) scale(0.8);
+  }
+  to {
+    transform: translate(0, 0) scale(1);
+  }
+}
 .link_san_pham {
   color: black;
   text-decoration: none;
@@ -954,23 +703,43 @@
 }
 .link_sp_noi_bat:hover {
   color: yellow;
+  text-decoration: none;
 }
 .link_sp_noi_bat:active {
   color: yellow;
+  text-decoration: none;
 }
 #viewAll :hover {
   color: yellow;
+  box-shadow: 0 3px 20px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
 }
 #viewAll :active {
   color: yellow;
 }
 .link_san_pham:hover {
   color: blue;
+  text-decoration: none;
 }
 .link_san_pham:active {
   color: blue;
+  text-decoration: none;
 }
-
+#khoianh1_lead_glass:hover,
+#khoianh1_lead_curtains:hover,
+#div_chua_xrays:hover,
+#div_chua_grids:hover {
+  box-shadow: 0 50px 55px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.anhLeftBottom:hover,
+.anhLeftTop:hover,
+.anhRightBottom:hover,
+.anhRightTop:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
 .footer {
 background-color: black;
 padding: 50px 100px;
