@@ -86,6 +86,32 @@
         }
     }
 
+    .lightbox div {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.8;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    .lightbox img {
+        width: 725px;
+        height: auto;
+        top: 20px;
+        position: fixed;
+        left: 145px;
+        z-index: 120;
+    }
+
+    .lightbox {
+        display: none;
+    }
+
+    
+
     #toggle-menu {
         display: none;
     }
@@ -306,13 +332,18 @@
     }
     
     #IMG_more {
-    
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
         margin-top: 2%;
         margin-bottom: 5%;
+    }
+
+    #IMG_more img:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+        transition: 0.5s;
     }
     
     .content {
@@ -414,6 +445,13 @@
         box-sizing: border-box; /* Bao gồm padding và border vào kích thước */
         padding: 0%;
     }
+
+    .box:hover {
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+
     
     #contact_us {
         text-align: center;
@@ -490,7 +528,7 @@
             top: 0 !important;
             left: 0 !important;
             padding: 20px !important;
-            z-index: 999 !important;
+            z-index: 9 !important;
         }
 
         #Content_MainProduce {
@@ -558,6 +596,30 @@
             padding-top: 5px !important;
         }
         
+    }
+
+    .lightbox div {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.8;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    .lightbox img {
+        width: 500px;
+        height: auto;
+        top: 20px;
+        position: fixed;
+        left: 30px;
+        z-index: 120;
+    }
+
+    .lightbox {
+        display: none;
     }
 
     body {
@@ -778,6 +840,12 @@
         margin-bottom: 5%;
     }
 
+    #IMG_more img:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+
     .small_IMG {
         height: auto; 
         width: 15%; 
@@ -845,14 +913,14 @@
         margin-bottom: 10px;
     }
     
-    .related_products, .recently_viewed_products{
+    .related_products{
         background-color: white;
         flex-basis: 100%;
         width: 64%;
         height: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start; /* Căn các phần tử theo cả hai cạnh */
+        justify-content: space-between; /* Căn các phần tử theo cả hai cạnh */
         margin-top: 10px;
     }
 
@@ -895,6 +963,12 @@
         box-sizing: border-box; /* Bao gồm padding và border vào kích thước */
         padding: 0%;
     }
+
+    .box:hover{
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
     
     #contact_us {
         text-align: center;
@@ -931,8 +1005,8 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
-    @media screen and (min-width: 320px) and (max-width: 400px) {
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    @media screen and (min-width: 300px) and (max-width: 400px) {
         nav{
             height: 20px !important;
         }
@@ -994,6 +1068,30 @@
             height: 28px !important;
         }
 
+    }
+
+    .lightbox div {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.8;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    .lightbox img {
+        width: 200px;
+        height: auto;
+        top: 50px;
+        position: fixed;
+        left: 10px;
+        z-index: 120;
+    }
+
+    .lightbox {
+        display: none;
     }
 
     #toggle-menu {
@@ -1211,6 +1309,12 @@
         margin-bottom: 5%;
     }
 
+    #IMG_more img:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+
     #IMG_more i {
         font-size: 13px !important;
     }
@@ -1330,6 +1434,12 @@
         background-color: whitesmoke;
         box-sizing: border-box; /* Bao gồm padding và border vào kích thước */
         padding: 0%;
+    }
+
+    .box:hover{
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+        transition: 0.5s;
     }
     
     #contact_us {
