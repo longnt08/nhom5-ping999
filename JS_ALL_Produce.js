@@ -30,3 +30,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var zoomIMG = document.querySelectorAll(".container #Main_Content #IMG_MainProduce img")[0];
+    zoomIMG.onclick = function() {
+        var lightbox = document.querySelector(".container .lightbox");
+        lightbox.style.display = "block";
+        
+        lightbox.getElementsByTagName("img")[0].src = this.src;
+        lightbox.getElementsByTagName("div")[0].onclick = function() {
+            lightbox.style.display = "none";
+        }
+
+    };
+});
