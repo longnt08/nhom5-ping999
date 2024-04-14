@@ -1,22 +1,28 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     var slides = document.querySelectorAll('.slide');
-//     var currentSlide = 0;
-    
-//     // Hiển thị slide đầu tiên
-//     slides[currentSlide].classList.add('active');
-    
-//     function nextSlide() {
-//         // Ẩn slide hiện tại
-//         slides[currentSlide].classList.remove('active');
-        
-//         // Tăng chỉ số của slide hiện tại
-//         currentSlide = (currentSlide + 1) % slides.length;
-        
-//         // Hiển thị slide tiếp theo
-//         slides[currentSlide].classList.add('active');
-//     }
-    
-//     // Tự động chuyển slide sau mỗi 3 giây
-//     setInterval(nextSlide, 3000);
-// });
+let slideIndex = 1;
+showSlides(slideIndex);
 
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}

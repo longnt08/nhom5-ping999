@@ -1,46 +1,93 @@
 @media only screen and (min-width: 1024px) {
-  .Container {
-    width: 100%;
-    height: 15em;
-    position: relative;
-  }
-  .slidesShow {
-    position: absolute;
-    max-width: 100%;
-    height: 100%;
-    background-color: white;
-    animation: zoom-out 1s ease forwards;
-    overflow: hidden;
-  }
-  .slide {
-    /* position: relative; */
-    width: 100%;
-    height: 100%;
-    transform: scaleX(-1);
-    margin-bottom: 20px;
-    /* opacity: 0;
-    transition: opacity 0.5s ease; */
-}
-/* .slide.active {
-  opacity: 1;
-} */
+* {box-sizing:border-box}
 
-  #div_chua_chu_header {
-    position: relative;
-    width: 40%;
-    height: 80%;
-    background-color: rgb(58, 51, 51);
-    z-index: 4;
-    animation: zoom-in 1.3s ease forwards;
-    opacity: 0.5;
-    left: 53%;
-    top: 11%;
-    border-radius: 10px;
-    font-size: 0.85em;
-    text-align: center;
-    color: white;
-    padding: 2% 2% 0% 2%;
-  }
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+  height: 16em;
+}
+.imgSlide {
+  width: 100%;
+  height: 100%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.numbertext {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.div_chua_chu_header {
+  position: relative;
+  width: 40%;
+  height: 80%;
+  background-color: rgb(58, 51, 51);
+  z-index: 999;
+  animation: zoom-in 1.3s ease forwards;
+  opacity: 0.5;
+  left: 57%;
+  top: -88%;
+  border-radius: 10px;
+  font-size: 0.9em;
+  text-align: center;
+  color: white;
+  padding: 2% 2% 0% 2%;
+}
 #section2 {
     display: grid;
     grid-template-rows: 23% 77%;
@@ -191,42 +238,95 @@
 
 /* kich thuoc 2 */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .Container {
-      width: 100%;
-      height: 14em;
-      position: relative;
-      margin-bottom: 0%;
-    }
-    .slidesShow {
-      position: absolute;
-      transform: translate(0, 0);
-      width: 100%;
-      height: 90%;
-      background-color: white;
-      z-index: 1;
-      animation: zoom-out 1s ease forwards;
-    }
-    .slide {
-      width: 100%;
-      height: 100%;
-      transform: scaleX(-1);
+  * {box-sizing:border-box}
+
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
   }
-    #div_chua_chu_header {
-      position: relative;
-      width: 50%;
-      height: 80%;
-      background-color: rgb(58, 51, 51);
-      z-index: 2;
-      animation: zoom-in 1.3s ease forwards;
-      opacity: 0.5;
-      left: 53%;
-      top: 5%;
-      border-radius: 10px;
-      font-size: 0.75em;
-      text-align: center;
-      color: white;
-      padding: 2.5% 2% 0% 2%;
-    }
+  
+  .mySlides {
+    display: none;
+    height: 15em;
+  }
+  .imgSlide {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .numbertext {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .div_chua_chu_header {
+    position: relative;
+    width: 50%;
+    height: 80%;
+    background-color: rgb(58, 51, 51);
+    z-index: 999;
+    animation: zoom-in 1.3s ease forwards;
+    opacity: 0.5;
+    left: 45%;
+    top: -88%;
+    border-radius: 10px;
+    font-size: 0.85em;
+    text-align: center;
+    color: white;
+    padding: 2% 2% 0% 2%;
+  }
   #section2 {
       display: grid;
       grid-template-rows: 25% 75%;
@@ -360,28 +460,100 @@
 
 /* kich thuoc 3 */
 @media screen and (min-width: 481px) and (max-width: 767px) {
-    .Container {
-      width: 100%;
-      height: 10em;
-      position: relative;
-    }
-    .slidesShow {
-      position: relative;
-      transform: translate(0, 0);
-      width: 100%;
-      height: 90%;
-      background-color: white;
-      z-index: 1;
-      animation: zoom-out 1s ease forwards;
-    }
-    .slide {
-      width: 100%;
-      height: 100%;
-      transform: scaleX(-1);
+  * {box-sizing:border-box}
+
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
   }
-    #div_chua_chu_header {
+  
+  .mySlides {
+    display: none;
+    height: 15em;
+  }
+  .imgSlide {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .numbertext {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .div_chua_chu_header {
+    position: relative;
+    width: 50%;
+    height: 80%;
+    background-color: rgb(58, 51, 51);
+    z-index: 999;
+    animation: zoom-in 1.3s ease forwards;
+    opacity: 0.5;
+    left: 45%;
+    top: -90%;
+    border-radius: 10px;
+    font-size: 0.8em;
+    text-align: center;
+    color: white;
+    padding: 2% 2% 0% 2%;
+  }
+  @media screen and (min-width: 490px) {
+    .div_chua_chu_header {
       display: none;
     }
+  }
   #section2 {
       display: grid;
       grid-template-rows: 10% 75%;
@@ -522,29 +694,82 @@
 }
 
 /* kich thuoc 4 */
-@media only screen and (max-width: 480px) {
-    .Container {
-      width: 100%;
-      height: 8em;
-      position: relative;
-    }
-    .slidesShow {
-      position: absolute;
-      transform: translate(0, 0);
-      width: 100%;
-      height: 90%;
-      background-color: white;
-      z-index: 1;
-      animation: zoom-out 1s ease forwards;
-    }
-    .slide {
-      width: 100%;
-      height: 100%;
-      transform: scaleX(-1);
+@media only screen and (max-width: 489px) {
+  * {box-sizing:border-box}
+
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
   }
-    #div_chua_chu_header {
-      display: none;
-    }
+  
+  .mySlides {
+    display: none;
+    height: 12em;
+  }
+  .imgSlide {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.4);
+  }
+  .numbertext {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .div_chua_chu_header {
+    display: none;
+  }
 #section2 {
   display: grid;
   grid-template-rows: 110px 1370px;
