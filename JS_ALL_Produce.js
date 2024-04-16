@@ -13,12 +13,7 @@ function toggleContent(contentId, button) {
     button.classList.add('blur');
 }
 
-$(document).ready(function() {
-    $("#toggle-menu").click(function() {
-        // Toggle content when the toggle-menu button is clicked
-        toggleContent("content1", this);
-    });
-});
+
 
 document.addEventListener('DOMContentLoaded', function() {
     var mainImg = document.getElementById('MainIMG');
@@ -30,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
     var zoomIMG = document.querySelectorAll(".container #Main_Content #IMG_MainProduce img")[0];
@@ -44,3 +40,63 @@ document.addEventListener("DOMContentLoaded", function() {
 
     };
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var toggle_menu = document.querySelector("body header #toggle-menu");
+
+    toggle_menu.addEventListener("click", function() {
+        var appearMenu = document.querySelector("body header #TITLE");
+        if(appearMenu.style.display == "none") {
+            appearMenu.style.display = "block";
+            appearMenu.style.transitionDuration = 0.5;
+            toggle_menu.style.color = "white";
+            toggle_menu.style.background = "black";
+        }
+        else {
+            appearMenu.style.display = "none";
+            toggle_menu.style.color = "black";
+            toggle_menu.style.background = "white";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    function adjustStyleBasedOnWidth() {
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var toggle_menu = document.querySelector("body header #toggle-menu");
+        var appearMenu = document.querySelector("body header #TITLE");
+        appearMenu.style.display = "none";
+        toggle_menu.style.backgroundColor = "white";
+        toggle_menu.style.color = "black";
+        
+        if(width <= 950) {
+            toggle_menu.addEventListener("onmousover", function() {
+                if(appearMenu.style.display == "none") {
+                    appearMenu.style.display = "block";
+                    toggle_menu.style.backgroundColor = "black";
+                    toggle_menu.style.color = "white";
+                }
+                else 
+                if(appearMenu.style.display == "block")
+                {
+                    appearMenu.style.display = "none";
+                    toggle_menu.style.backgroundColor = "white";
+                    toggle_menu.style.color = "black";
+                }
+            });
+
+        }
+        else {
+            appearMenu.style.display = "flex";
+            toggle_menu.style.backgroundColor = "white";
+            toggle_menu.style.color = "black";
+        }
+
+
+    }
+    adjustStyleBasedOnWidth();
+    window.addEventListener("resize", adjustStyleBasedOnWidth);
+});
+
+
