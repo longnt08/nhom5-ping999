@@ -1,4 +1,4 @@
-fetch("/html/navbar.html")
+fetch("navbar.html")
     .then((response) => response.text())
     .then((html) => {
         const navbar = document.getElementById("topnav");

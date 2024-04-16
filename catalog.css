@@ -6,7 +6,6 @@
 /* Banner */
 .hero{
   overflow: hidden;
-  margin-top: 110px;
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("equipment_banner.jpg");
 
   height: 495px;
