@@ -7,7 +7,6 @@
 .hero{
   overflow: hidden;
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("equipment_banner.jpg");
-
   height: 495px;
 
   background-position: center;
@@ -71,8 +70,8 @@ section img{
 .card:hover{
   box-shadow: 0 8px 16px rgba(0,0,0,0.5);
   cursor: pointer;
-
 }
+
 .price {
   color: grey;
   font-size: 22px;
