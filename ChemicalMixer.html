@@ -6,42 +6,19 @@
         <title>Chemical Mixer</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1 all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
-        <link rel="stylesheet" type="text/css" href=" CSS_Produce.css">
-        <link rel="stylesheet" href=" footer-new.css">
-        <link rel="stylesheet" href=" navbar.css" />
+        <link rel="stylesheet" type="text/css" href="CSS_Produce.css">
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <!-- icon trang -->
     </head>
+    <body>
+        <!-- Header -->
+        <div id="topnav"></div>
+
         <!-- Nav bar -->
-    <div class="topnav" id="myTopnav">
-        <img
-        src=" homeImg2.png"
-        alt=""
-        style="
-            width: 142px;
-            height: auto;
-            margin-right: 150px;
-            margin-left: 20px;
-            margin-bottom: 20px;
-            float: left;
-        "
-        />
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="equipment.html">EQUIPMENT</a>
-        <a href="supplies.html">SUPPLIES</a>
-        <a href="accessories.html" class="active">ACCESSORIES</a>
-        <a href="parts.html">PARTS</a>
-        <a href="orderMethods.html" style="color: #47b5db">ORDER NOW</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-        </a>
-    </div>
-  
         <nav>
             <div>
                 <ul>
-                    <li><a href="equipment.html">EQUIPMENT</a></li>
+                    <li><a href="equipment.html">Equipment</a></li>
                     <li><i class="fa-solid fa-angle-right"></i></li>
                     <li><a href="ChemicalMixer.html">Chemical Mixers</a></li>
                 </ul>
@@ -81,142 +58,80 @@
                     <img src = "" >
                 </div>
             </div>
-
-
             <div id = "information">
-                <button onclick="toggleContent('content1')" class="title_info"><b>Description</b></button>
-                <button onclick="toggleContent('content2')" class="title_info"><b>Size</b></button>
-                <button onclick="toggleContent('content3')" class="title_info"><b>More information</b></button>
+            <button onclick="toggleContent('content1')" class="title_info"><b>Description</b></button>
+            <button onclick="toggleContent('content2')" class="title_info"><b>Size</b></button>
+            <button onclick="toggleContent('content3')" class="title_info"><b>More information</b></button>
 
-                <div id="content1" class="content active detail_infor_product">
-                    A versatile Chemical Mixer for use with:<br>
-                    X-Ray<br>
-                    Graphic Arts<br>
-                    Photo Products<br>
-                    One year warranty on all parts<br>
-                </div>
-                <div id="content2" class="content detail_infor_product">
-                    120 Volts AC<br>
-                    Dimensions: Standard Model - 30"H x 24"W x12"D. Space Saver - 21"H x 24"W x 12"D.<br>
-                    Capacity: Standard Model - 12.5 gallons, Developer & Fixer. Space Saver - 7.5 gallons, Developer & Fixer<br>
-                    Operation Range: 18-125 psi Water Pressure.
-                </div>
-                <div id="content3" class="content detail_infor_product">
-                    The IS-199 incorporates a unique combination of features which make it the Mixer of Choice for both the user and the serviceman.
-                    The Specific Gravity Mixing System allows the user to start a mix anytime.
-                    The mixer responds to the addition of concentrated chemicals and adds the correct amount of water automatically.
-                    All Electronic Components have been chosen for dependability.
-                    Straight-forward circuit designs eliminate the need for circuit boards thereby increasing reliability.
-                    The Low Level Warning System indicates that solution level is 2.0 gallons or less. The warning system resets
-                    automatically when the user begins a 5 or 10 gallon mix.
-                </div>
-
+            <div id="content1" class="content active detail_infor_product">
+                A versatile Chemical Mixer for use with:<br>
+                X-Ray<br>
+                Graphic Arts<br>
+                Photo Products<br>
+                One year warranty on all parts<br>
+            </div>
+            <div id="content2" class="content detail_infor_product">
+                120 Volts AC<br>
+                Dimensions: Standard Model - 30"H x 24"W x12"D. Space Saver - 21"H x 24"W x 12"D.<br>
+                Capacity: Standard Model - 12.5 gallons, Developer & Fixer. Space Saver - 7.5 gallons, Developer & Fixer<br>
+                Operation Range: 18-125 psi Water Pressure.
+            </div>
+            <div id="content3" class="content detail_infor_product">
+                The IS-199 incorporates a unique combination of features which make it the Mixer of Choice for both the user and the serviceman.
+                The Specific Gravity Mixing System allows the user to start a mix anytime.
+                The mixer responds to the addition of concentrated chemicals and adds the correct amount of water automatically.
+                All Electronic Components have been chosen for dependability.
+                Straight-forward circuit designs eliminate the need for circuit boards thereby increasing reliability.
+                The Low Level Warning System indicates that solution level is 2.0 gallons or less. The warning system resets
+                automatically when the user begins a 5 or 10 gallon mix.
             </div>
 
+            </div>
             <p class = "OtherProduct"><b>Related Products</b></p> 
             <div class="related_products">
-                <div class="box">
-                    <a href = "AutomaticProcessor.html">
-                        <img src="AutomaticProcessor1.jpg" class = "detail_related">
-                        <div class = "infor_detail_related">
-                            <p class = "relate_name_product">Automatic Processor</p>
-                            <p class = "relate_value_product">$5,995.00</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="box">
-                    <a href = "FilmPorfolio.html">
-                        <img src="XportXrayFilmPortfolio0.jpg" class = "detail_related">
-                        <div class = "infor_detail_related">
-                            <p class = "relate_name_product">Film Portfolio</p>
-                            <p class = "relate_value_product">$120.00</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="box">
-                    <a href = "FilmDuplicator.html">
-                        <img src="WolfRadiologyFilmDuplicator0.jpg" class = "detail_related">
-                        <div class = "infor_detail_related">
-                            <p class = "relate_name_product">Film Duplicator</p>
-                            <p class = "relate_value_product">$621.85</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="box">
-                    <a href = "Thermometers.html">
-                        <img src="Thermometers0.jpg" class = "detail_related">
-                        <div class = "infor_detail_related">
-                            <p class = "relate_name_product">Thermometers</p>
-                            <p class = "relate_value_product">$13.38</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        <footer class="footer">
-            <div>
-                <div class="row">
-                <div class="footer-col">
-                    <ul>
-                    <li>
-                        <img
-                        src="footer_Logo.png"
-                        alt="logo"
-                        style="width: 250px; height: auto"
-                        />
-                    </li>
-                    <div class="social-links">
-                        <li>
-                        <a href="https://www.facebook.com/profile.php?id=100076811227628"
-                            ><i class="fab fa-facebook"></i
-                        ></a>
-                        <a href="https://twitter.com/PacificXray2"
-                            ><i class="fab fa-twitter"></i
-                        ></a>
-                        </li>
+            <div class="box">
+                <a href = "AutomaticProcessor.html">
+                    <img src="AutomaticProcessor1.jpg" class = "detail_related">
+                    <div class = "infor_detail_related">
+                        <p class = "relate_name_product">Automatic Processor</p>
+                        <p class = "relate_value_product">$5,995.00</p>
                     </div>
-                    </ul>
-                </div>
-                <div class="footer-col" id="footer_Order">
-                    <h4><b>Order</b></h4>
-                    <ul>
-                    <li><a href=" about.html">About Us</a></li>
-                    <li><a href="orderMethods.html">Order Methods</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col" id="footer_Product">
-                    <h4><b>Product</b></h4>
-                    <ul>
-                    <li><a href="equipment.html">Equipment</a></li>
-                    <li><a href="supplies.html">Supplies</a></li>
-                    <li><a href="accessories.html">Accessories</a></li>
-                    <li><a href="parts.html">Parts</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col" id="footer_contact_information">
-                    <h4><b>Contact Information</b></h4>
-                    <ul>
-                    <li>
-                        <p>Phone: 1-503-667-3000</p>
-                        <p>(8am-5pm Monday-Friday)</p>
-                        <p>Toll-Free (US): 800-827-XRAY (800-827-9729)</p>
-                    </li>
-                    <li>Address: P.O. Box 625, Gresham, OR 97030, U.S.A.</li>
-                    </ul>
-                </div>
-                </div>
+                </a>
             </div>
-            <p
-                style="
-                color: #bbb;
-                font-size: 12px;
-                text-align: right;
-                padding-right: 220px;
-                "
-            >
-                ©1997-2024 Pacific Northwest X-Ray Inc. - Sales & Marketing Division - All
-                Rights Reserved
-            </p>
-            </footer>
-            <script src="js/JS_ALL_Produce.js"></script>
+            <div class="box">
+                <a href = "FilmPorfolio.html">
+                    <img src="XportXrayFilmPortfolio0.jpg" class = "detail_related">
+                    <div class = "infor_detail_related">
+                        <p class = "relate_name_product">Film Portfolio</p>
+                        <p class = "relate_value_product">$120.00</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href = "FilmDuplicator.html">
+                    <img src="WolfRadiologyFilmDuplicator0.jpg" class = "detail_related">
+                    <div class = "infor_detail_related">
+                        <p class = "relate_name_product">Film Duplicator</p>
+                        <p class = "relate_value_product">$621.85</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href = "Thermometers.html">
+                    <img src="Thermometers0.jpg" class = "detail_related">
+                    <div class = "infor_detail_related">
+                        <p class = "relate_name_product">Thermometers</p>
+                        <p class = "relate_value_product">$13.38</p>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div id="footer"></div>
+        <script src="navbar.js"></script>
+        <script src="footer.js"></script>
+        <script src="JS_ALL_Produce.js"></script>
     </body>
 </html>
