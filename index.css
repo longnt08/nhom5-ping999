@@ -353,7 +353,7 @@
       padding: 0;
       text-align: center;
       font-size: 18px;
-      color: rgb(38, 224, 21);
+      color: gray;
       font-family: ABeeZee;
   }
   #div2_anh {
@@ -580,7 +580,7 @@
       padding: 0;
       text-align: center;
       font-size: 15px;
-      color: rgb(38, 224, 21);
+      color: gray;
   }
   #div2_anh {
       display: inline;
