@@ -247,7 +247,7 @@
     nav ul li i{
         width: 9px;
         height: 16px;
-        /* margin-left: 7px; */
+        margin-left: 7px;
         color: white;
     }
     
@@ -257,7 +257,7 @@
         color: white;
     }
     
-    .container {
+    .container-product {
         display: flex;
         flex-direction: column;
         justify-content: center;
