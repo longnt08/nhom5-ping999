@@ -116,3 +116,13 @@ section img{
     justify-content: space-around;
   }
 }
+
+@media (min-width:963px) and (){
+  section {
+    padding: 3% 5%;
+    display: grid;
+    padding-bottom: 50px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+  }
+}
