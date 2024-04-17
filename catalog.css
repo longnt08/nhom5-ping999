@@ -27,17 +27,17 @@
 /* Products */
 section {
   margin: auto;
-  width: 80%;
+  width: 90%;
   display: grid;
-  padding: 100px;
+  padding: 80px;
   padding-bottom: 50px;
   grid-template-columns: auto auto auto auto;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 section img{
-  height: 70%;
-  width: auto;
+  height: 250px;
+  width: 250px;
 }
 
 .card {
@@ -57,6 +57,7 @@ section img{
 }
 
 .card h1{
+  font-size: 20px;
   margin-bottom: 5px;
   color: black;
 }
