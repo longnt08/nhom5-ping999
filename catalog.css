@@ -106,3 +106,13 @@ section img{
 }
 
 .page-number a:hover:not(.active) {background-color: #ddd;}
+
+@media (max-width:963px){
+  section {
+    padding: 3% 5%;
+    display: grid;
+    padding-bottom: 50px;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+}
